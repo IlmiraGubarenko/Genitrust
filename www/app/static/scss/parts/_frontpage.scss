@@ -1,0 +1,37 @@
+.front-page {
+
+	.advisory {
+		position: relative;
+	  	margin-top: -30px;
+		background: url(../img/advisory-background_front.png) no-repeat center/cover;
+
+		@media screen and (max-width: 767px) {
+			margin-top: -15px;
+		}
+
+		@media screen and (max-width: 479px) {
+			background: #000;
+			margin-top: -22px;
+		}
+	}
+
+	.wallet_services {
+	  padding: 70rem 0 7rem 0;
+	  background: url(../img/wallet_services-background.jpg) no-repeat center/cover;
+	  overflow: hidden;
+	  @media screen and (max-width: 767px) {
+	    padding: 4rem 0 8rem 0;
+	    background: url(../img/wallet_services-background_standalone.jpg) no-repeat center/cover;
+	  }
+	}
+	
+	.goal-programm {
+		@media screen and (min-width: 768px) {
+			background: url(../img/goal_programm-background.jpg) no-repeat center/cover;
+		}
+	}
+	
+	.meet-robert {
+	  background: url(../img/meet_robert-background.png) no-repeat right/cover;
+	}
+}

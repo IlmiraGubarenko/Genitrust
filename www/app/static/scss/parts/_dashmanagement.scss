@@ -1,0 +1,37 @@
+.dash-management {
+  padding: 13rem 0 23rem 0;
+  background: url(../img/dash_management-background.jpg) no-repeat center/cover;
+  color: #fff;
+  margin-top: -1px;
+  overflow: hidden;
+
+  .container {
+    padding: 5.2rem 0 6rem 0;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 7rem 0 20rem 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: -1px;
+    background: url(../img/dash-management-background-mobile.png) no-repeat 100% 100%;
+    background-size: cover;
+    text-align: center;
+    padding: 0;
+  }
+  .dash_managemen-logo {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  h1 {
+    color: #fff;
+  }
+
+  p {
+    font-size: 1.3rem;
+    padding: 3.3rem 0 3rem 0;
+  }
+}

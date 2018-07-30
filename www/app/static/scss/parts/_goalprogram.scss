@@ -1,0 +1,36 @@
+.goal-programm {
+  padding: 8.2rem 0 21.8rem 0;
+  background: url(../img/goal_programm-background.jpg) no-repeat right/cover;
+
+  @media screen and (max-width: 479px) {
+    text-align: center;
+  }
+	
+	.cta-button {
+		background: #f5bd3e;	
+	}
+
+    @media screen and (max-width: 767px) {
+      padding: 6rem 0 0 0;
+      background: none;
+    }
+	@media screen and (min-width: 768px) {
+		background: url(../img/goal_programm-background_standalone.jpg) no-repeat center/cover;
+	}
+
+  h1 {
+    @media screen and (max-width: 479px) {
+      font-size: 27px;
+    }
+  }
+	
+  p {
+    font-size: 1.3em;
+    padding: 4.7rem 0 3.3rem 0;
+
+    @media screen and (max-width: 479px) {
+      font-size: 18px;
+    }
+  }
+}
+

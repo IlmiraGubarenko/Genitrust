@@ -1,0 +1,33 @@
+.wallet_services {
+  padding: 41rem 0 7rem 0;
+  background: url(../img/wallet_services-background.jpg) no-repeat center/cover;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 767px) {
+    padding: 4rem 0 8rem 0;
+    background: url(../img/wallet_services-background_standalone.jpg) no-repeat center/cover;
+  }
+  h1 {
+    margin-bottom: 4.4rem;
+  }
+  p {
+    margin: 1.4rem 0 1.3rem 0;
+    color: #4F4F4F;
+
+    @media screen and (max-width: 479px) {
+      font-size: 16px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+	  p {
+		  padding-bottom: 2.3rem;
+	  }
+  }
+  .laptop {
+    position: absolute;
+    width: 50%;
+    right: -18px;
+    bottom: 19px;
+  }
+}

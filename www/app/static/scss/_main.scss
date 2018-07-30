@@ -1,0 +1,378 @@
+body {
+	font: {
+		family: Roboto, serif;
+		weight: normal;
+		style: normal;
+	}
+	line-height: 1.5;
+	position: relative;
+	color: #090A47;
+
+	@include mq($from: mobile) {
+		font-size: 12px;
+	}
+	@include mq($from: tablet) {
+		font-size: 13px;
+	}
+	@include mq($from: desktop) {
+		font-size: 16px;
+	}
+	@include mq($from: wide) {
+		font-size: 18px;
+	}
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+h1 {
+	@include MavenPro(2.8em, #090A47, bold, 1em, false, normal);
+
+	@media screen and (max-width: 479px) {
+		text-align: center;
+	}
+}
+h2 {
+	@include MavenPro(2.3em, #fff, bold, 1em, false, normal);
+}
+h3 {
+	@include MavenPro(1.8em, #101010, bold, 1em, false, normal);
+}
+h4 {
+	@include Roboto(0.8em, #fff, bold, 1em, uppercase, normal);
+}
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	border: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+}
+img {
+	max-width: 100%;
+}
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	@media screen and (max-width: 599px) {
+		margin-top: 10px;
+	}
+}
+.cta-button {
+  	display: inline-block;
+  	font-size: 12px;
+	font-weight: bold;
+  	padding: 11px 25px 13px 25px;
+  	@include border-radius(5px);
+
+	@media screen and (max-width: 479px) {
+		margin-top: 1rem;
+	}
+}
+.yellow-button {
+	color: #090A47;
+	background-image: linear-gradient(204deg, #fbe072, #f5bd3e);
+}
+.blue-button {
+  	color: #fff;
+  	background-image: linear-gradient(25deg, #004ab7, #53a0fd);
+
+	&:hover {
+		color: #fff;
+	}
+}
+.blue_dark-button {
+	color: #F5BD3E;
+	border: 2px solid #F5BD3E;
+	background: rgba(9, 10, 71, 0.8);
+	padding: 11px 57px 13px 57px;
+
+	&:hover {
+		color: #F5BD3E;
+	}
+}
+.icon-size {
+	width: 64px;
+	height: 64px;
+	margin-right: 20px;
+
+  	@media screen and (max-width: 1199px) {
+    	width: 45px;
+    	height: 45px;
+    	margin-right: 10px;
+  	}
+	@media screen and (max-width: 479px) {
+		width: 45px;
+		height: 45px;
+	}
+}
+.icon-block {
+
+	@media screen and (max-width: 767px) {
+		display: block;
+		margin: 0 auto .7rem auto;
+	}
+}
+.icon-size-oval {
+  	width: 128px;
+  	height: 128px;
+	display: block;
+
+	@media screen and (max-width: 1199px) {
+    	width: 100px;
+    	height: 100px;
+		display: inline-block;
+    }
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+}
+.logo-size {
+	width: 150px;
+}
+
+.header {
+	background: #FAFAFA;
+	padding: 0 0 10px 0;
+
+	nav {
+		font: {
+			family: Montserrat, serif;
+			weight: normal;
+			style: normal;
+			size: 0.9em;
+		}
+
+		.navbar-toggler {
+			border: 0;
+			padding: 0.25rem 0;
+
+			.navbar-toggler-icon {
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+			}
+		}
+
+		.navbar-nav {
+
+			padding-top: 20px;
+
+			.nav-item {
+				font-size: 1.4em;
+				margin-left: 18px;
+				position: relative;
+
+				&:hover {
+
+					.lower_hower {
+						opacity: 1;
+					}
+				}
+
+				.nav-link {
+					padding: 10px 17px 10px 17px;
+					color: #090A47;
+
+					&:hover {
+						@include border-radius(3px);
+					}
+				}
+
+				.lower_hower {
+					position: absolute;
+					background: #F5BD3E;
+					width: 66px;
+					height: 3px;
+					top: 72px;
+					opacity: 0;
+
+					@media screen and (max-width: 767px) {
+						display: none;
+					}
+					@media screen and (min-width: 768px) {
+						top: 53px;
+					}
+				}
+			}
+
+			@media screen and (min-width:768px) {
+
+				padding-top: 0;
+
+				.nav-item {
+					font-size: .9em;
+				}
+			}
+
+			.active {
+
+				@media screen and (min-width:768px) {
+
+					background: #F5BD3E;
+					@include border-radius(3px);
+
+					.lower_hower {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	.navbar {
+		@media screen and (max-width: 479px) {
+			padding: 0;
+			align-items: flex-end;
+		}
+	}
+
+	@media screen and (min-width:768px) {
+		padding-bottom: 3px;
+	}
+	@media screen and (min-width:992px) {
+		padding-bottom: 1px;
+	}
+	@media screen and (min-width:1300px) {
+		padding-bottom: 0;
+	}
+}
+
+.footer {
+  background: #182838;
+  color: #fff;
+  font-size: 14px;
+  padding: 3.9rem 0 3.9rem 0;
+  position: relative;
+  z-index: 999;
+
+  @media screen and (max-width: 767px) {
+    padding: 2.9rem 0 1rem 0;
+    text-align: center;
+  }
+
+  img {
+    margin-bottom: 4.2rem;
+    margin-top: -30px;
+
+	  @media screen and (max-width: 767px) {
+		  margin-top: .2rem;
+		  margin-bottom: 1rem;
+	  }
+  }
+
+  p {
+    color: #B0B3B6;
+  }
+
+  h4 {
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 767px) {
+       margin-top: 3rem;
+		font-size: 1.1em;
+    }
+  }
+
+  .footer-nav {
+
+    li {
+
+      & + li {
+          margin-top: 10px;
+
+		  @media screen and (max-width: 479px) {
+			  margin-top: 0;
+		  }
+
+
+      }
+
+      a {
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .footer-icon {
+    color: #D0D7DD;
+    justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      justify-content: space-evenly;
+	  margin-top: 2rem;
+    }
+  }
+
+  .sign {
+
+	  margin-top: -1.4rem;
+
+	  @media screen and (max-width: 767px) {
+		  margin-top: 3rem;
+	  }
+  }
+}
+
+.tablet{
+	display: block;
+}
+@include mq($from: tablet){
+	.tablet{
+		display: none;
+	}
+}
+@include mq($from: tablet){
+	.mobile{
+		display: block;
+	}
+}
+
+.left-block {
+	@media screen and (max-width: 767px) {
+		padding-right: 100px;
+		margin-bottom: 10px;
+	}
+}
+
+.blue-border {
+	background: #538fce;
+	margin-left: -25px;
+	margin-right: -25px;
+	height: 2px;
+	display: none;
+	@media screen and (max-width: 479px) {
+		display: block;
+	}
+}
+
+.flex-img-none {
+	display: none !important;
+}
+
+.flex-img {
+	position: absolute;
+	z-index: 99;
+	display: none;
+	@media screen and (max-width: 479px) {
+		display: block;
+	}
+}
+
+.flex-img-top {
+	top: -3px;
+}
+
+.flex-img-bottom {
+	bottom: -11px;
+}

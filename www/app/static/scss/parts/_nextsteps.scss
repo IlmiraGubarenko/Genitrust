@@ -1,0 +1,64 @@
+.next-steps {
+  padding: 7rem 0 10rem 0;
+  margin-top: -20px;
+  background: url(../img/next_steps-background.png) no-repeat center/cover;
+  font-size: 1.3em;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 767px) {
+    padding: 3rem 0 5rem 0;
+    background: url(../img/keyboard-bg.png) no-repeat center/cover;
+    margin-top: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 99;
+
+    h2 {
+      color: #090A47;
+      margin-bottom: 3.4rem;
+    }
+    .next-steps-block {
+      justify-content: space-evenly;
+
+      @media screen and (max-width: 767px) {
+        justify-content: space-evenly;
+      }
+
+      .next-steps__item {
+        text-align: center;
+
+        @media screen and (max-width: 767px) {
+          margin-top: 2rem;
+        }
+
+        .cta-button {
+          margin-top: 2.7rem;
+
+          @media screen and (max-width: 479px) {
+            padding: 11px 19px 13px 19px;
+            margin-top: 1.7rem;
+          }
+        }
+
+        .icon-size {
+          margin-right: 0;
+        }
+
+        .tablet {
+          @media screen and (max-width: 767px) {
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .keyboard {
+    position: absolute;
+    top: 290px;
+    right: -17px;
+  }
+}

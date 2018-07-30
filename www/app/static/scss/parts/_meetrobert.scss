@@ -1,0 +1,56 @@
+.meet-robert {
+  padding: 9rem 0 7.8rem 0;
+  background: url(../img/meet_robert-background_standalone.jpg) no-repeat right/cover;
+  @media screen and (min-width: 568px) {
+		background-position: 150%;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 0 0 4rem 0;
+  }
+  @media screen and (min-width: 768px) {
+    background-position: center;
+  }
+  @media screen and (max-width: 479px) {
+    background: #fff !important;
+    padding: 0 0 4rem 0;
+    text-align: center;
+  }
+
+  .meet-robert-img {
+    margin-top: -1px;
+  }
+  
+  .m-left {
+
+    @media screen and (max-width: 767px) {
+      margin-left: 290px;
+    }
+
+    @media screen and (max-width: 599px) {
+      margin-left: 0;
+    }
+
+    h1 {
+      padding-bottom: 2.3rem;
+      @media screen and (max-width: 479px) {
+        font-size: 27px;
+        margin-top: -10px;
+      }
+    }
+
+    p {
+      @media screen and (max-width: 479px) {
+        font-size: 18px;
+        text-align: left;
+      }
+      & + p {
+        padding-top: 1.9rem;
+      }
+    }
+
+    .cta-button {
+      margin-top: 3.6rem;
+
+    }
+  }
+}
